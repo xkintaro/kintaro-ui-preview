@@ -7,17 +7,30 @@ import {
   KintaroButtonSuccess1, KintaroButtonSuccess2, KintaroButtonSuccess3,
   KintaroButtonError1, KintaroButtonError2, KintaroButtonError3,
   KintaroButtonClose,
-  KintaroDescription, KintaroModal
+  KintaroDescription, KintaroModal, KintaroFooter
 } from 'kintaro-ui/src';
 
 import overlay from '/2.png'
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
+import { IoIosMail } from "react-icons/io";
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 import './App.css'
 
 function App() {
   const [modalVisible, setModalVisible] = useState(false);
+
+  const [text, setText] = useState("");
+
+  useEffect(() => {
+    fetch("/kintaro-ui-preview/footer-code.txt")
+      .then((res) => res.text())
+      .then((data) => setText(data));
+  }, []);
 
   return (
     <div className='kintaro-ui-container'>
@@ -39,9 +52,9 @@ function App() {
         <img src={overlay} alt="" className="hero-overlay" />
       </div>
 
-      <div class="gothic-divider">
-        <div class="side-ornament left">✘ ✘ ✘</div>
-        <div class="side-ornament right">✘ ✘ ✘</div>
+      <div className='gothic-divider'>
+        <div className='side-ornament left'>✘ ✘ ✘</div>
+        <div className='side-ornament right'>✘ ✘ ✘</div>
       </div>
 
       <div className="kw-ui">
@@ -96,9 +109,9 @@ function App() {
         </div>
       </div>
 
-      <div class="gothic-divider">
-        <div class="side-ornament left">✘ ✘ ✘</div>
-        <div class="side-ornament right">✘ ✘ ✘</div>
+      <div className='gothic-divider'>
+        <div className='side-ornament left'>✘ ✘ ✘</div>
+        <div className='side-ornament right'>✘ ✘ ✘</div>
       </div>
 
       <div className="kw-ui">
@@ -180,9 +193,9 @@ function App() {
         </div>
       </div>
 
-      <div class="gothic-divider">
-        <div class="side-ornament left">✘ ✘ ✘</div>
-        <div class="side-ornament right">✘ ✘ ✘</div>
+      <div className='gothic-divider'>
+        <div className='side-ornament left'>✘ ✘ ✘</div>
+        <div className='side-ornament right'>✘ ✘ ✘</div>
       </div>
 
       <div className="kw-ui">
@@ -246,6 +259,77 @@ function App() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className='gothic-divider'>
+        <div className='side-ornament left'>✘ ✘ ✘</div>
+        <div className='side-ornament right'>✘ ✘ ✘</div>
+      </div>
+
+      <div className="kw-ui-footer">
+
+        <div className="ui-group-head">
+          <KintaroTitle2 title={"Kintaro Footer Components"} />
+          <KintaroDescription
+            text={"This is a collection of Kintaro UI components. You can use these components in your React applications."}
+          />
+        </div>
+
+        <div className="footer-code-kw-ui">
+          <pre>
+            <code>{text}</code>
+          </pre>
+        </div>
+
+        <KintaroFooter
+          title="My Custom Footer"
+          description="Explore more about our services, resources, and company."
+          copyrightText="© 2025 My Company. All rights reserved."
+          sections={[
+            {
+              title: "Services",
+              links: [
+                { text: "Web Development", url: "" },
+                { text: "Mobile Applications", url: "" },
+                { text: "UI/UX Design", url: "" },
+                { text: "Cloud Hosting", url: "" }
+              ]
+            },
+            {
+              title: "Resources",
+              links: [
+                { text: "Documentation", url: "" },
+                { text: "API Reference", url: "" },
+                { text: "Developer Tools", url: "" },
+                { text: "Code Samples", url: "" }
+              ]
+            },
+            {
+              title: "Company",
+              links: [
+                { text: "About Us", url: "" },
+                { text: "Careers", url: "" },
+                { text: "Press & Media", url: "" },
+                { text: "Partners", url: "" }
+              ]
+            },
+            {
+              title: "Support",
+              links: [
+                { text: "Help Center", url: "" },
+                { text: "Community Forum", url: "" },
+                { text: "Status Page", url: "" },
+                { text: "Contact Support", url: "" }
+              ]
+            }
+          ]}
+          socialIcons={[
+            { icon: <FaGithub />, url: "https://github.com" },
+            { icon: <FaTwitter />, url: "https://twitter.com" },
+            { icon: <FaInstagram />, url: "https://instagram.com" },
+            { icon: <IoIosMail />, url: "mailto:contact@example.com" }
+          ]}
+        />
       </div>
     </div>
   )
