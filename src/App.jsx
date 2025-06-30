@@ -7,7 +7,8 @@ import {
   KintaroButtonSuccess1, KintaroButtonSuccess2, KintaroButtonSuccess3,
   KintaroButtonError1, KintaroButtonError2, KintaroButtonError3,
   KintaroButtonClose,
-  KintaroDescription, KintaroModal, KintaroFooter
+  KintaroDescription, KintaroModal, KintaroFooter,
+  KintaroDivider1
 } from 'kintaro-ui/src';
 
 import overlay from '/2.png'
@@ -20,6 +21,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 
 import './App.css'
+
 
 function App() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -52,10 +54,7 @@ function App() {
         <img src={overlay} alt="" className="hero-overlay" />
       </div>
 
-      <div className='gothic-divider'>
-        <div className='side-ornament left'>✘ ✘ ✘</div>
-        <div className='side-ornament right'>✘ ✘ ✘</div>
-      </div>
+      <KintaroDivider1 />
 
       <div className="kw-ui">
         <div className="ui-group-head">
@@ -109,10 +108,7 @@ function App() {
         </div>
       </div>
 
-      <div className='gothic-divider'>
-        <div className='side-ornament left'>✘ ✘ ✘</div>
-        <div className='side-ornament right'>✘ ✘ ✘</div>
-      </div>
+      <KintaroDivider1 />
 
       <div className="kw-ui">
         <div className="ui-group-head">
@@ -193,10 +189,7 @@ function App() {
         </div>
       </div>
 
-      <div className='gothic-divider'>
-        <div className='side-ornament left'>✘ ✘ ✘</div>
-        <div className='side-ornament right'>✘ ✘ ✘</div>
-      </div>
+      <KintaroDivider1 />
 
       <div className="kw-ui">
         <div className="ui-group-head">
@@ -261,10 +254,28 @@ function App() {
         </div>
       </div>
 
-      <div className='gothic-divider'>
-        <div className='side-ornament left'>✘ ✘ ✘</div>
-        <div className='side-ornament right'>✘ ✘ ✘</div>
+      <KintaroDivider1 />
+
+      <div className="kw-ui">
+        <div className="ui-group-head">
+          <KintaroTitle2 title={"Kintaro Aesthetic Components"} />
+          <KintaroDescription
+            text={"This is a collection of Kintaro UI components. You can use these components in your React applications."}
+          />
+        </div>
+        <div className="ui-group">
+          <div className="kintaro-ui-item w100itemm-ui">
+            <div className="item-head">
+              <KintaroTitle2 title={"<KintaroDivider1 />"} />
+            </div>
+            <div className="item-main ffsfdsfs-ui">
+              <KintaroDivider1 />
+            </div>
+          </div>
+        </div>
       </div>
+
+
 
       <div className="kw-ui-footer">
 
@@ -331,7 +342,7 @@ function App() {
           ]}
         />
       </div>
-    </div>
+    </div >
   )
 }
 
