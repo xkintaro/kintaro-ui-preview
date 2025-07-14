@@ -121,15 +121,60 @@ function App() {
                 <KintaroButton3 title={"title"} />
                 <KintaroButton3 title={"onClick"} />
                 <KintaroButton3 title={"color"} />
+                <KintaroButton3 title={"width"} />
                 <KintaroButton3 title={"bgColor"} />
-                <KintaroButton3 title={"borderColor"} />
                 <KintaroButton3 title={"hoverColor"} />
               </div>
             </div>
             <div className="item-main">
               <KintaroButton1 title={"Kintaro Button"} />
+            </div>
+          </div>
+
+          <div className="kintaro-ui-item">
+            <div className="item-head" style={{ display: 'block' }}>
+              <KintaroTitle2 title={"<KintaroButton2 />"} />
+              <div className="item-prop" style={{ marginTop: '1rem' }}>
+                <KintaroButton3 title={"title"} />
+                <KintaroButton3 title={"onClick"} />
+                <KintaroButton3 title={"width"} />
+                <KintaroButton3 title={"color"} />
+                <KintaroButton3 title={"borderColor"} />
+              </div>
+            </div>
+            <div className="item-main">
               <KintaroButton2 title={"Kintaro Button"} />
+            </div>
+          </div>
+
+          <div className="kintaro-ui-item">
+            <div className="item-head" style={{ display: 'block' }}>
+              <KintaroTitle2 title={"<KintaroButton3 />"} />
+              <div className="item-prop" style={{ marginTop: '1rem' }}>
+                <KintaroButton3 title={"title"} />
+                <KintaroButton3 title={"onClick"} />
+                <KintaroButton3 title={"width"} />
+                <KintaroButton3 title={"color"} />
+                <KintaroButton3 title={"bgColor"} />
+                <KintaroButton3 title={"hoverColor"} />
+              </div>
+            </div>
+            <div className="item-main">
               <KintaroButton3 title={"Kintaro Button"} />
+            </div>
+          </div>
+
+          <div className="kintaro-ui-item">
+            <div className="item-head" style={{ display: 'block' }}>
+              <KintaroTitle2 title={"<KintaroButton4 />"} />
+              <div className="item-prop" style={{ marginTop: '1rem' }}>
+                <KintaroButton3 title={"title"} />
+                <KintaroButton3 title={"onClick"} />
+                <KintaroButton3 title={"color"} />
+                <KintaroButton3 title={"hoverColor"} />
+              </div>
+            </div>
+            <div className="item-main">
               <KintaroButton4 title={"Kintaro Button"} />
             </div>
           </div>
