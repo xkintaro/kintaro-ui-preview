@@ -2,10 +2,7 @@ import 'kintaro-ui/src/root.css';
 import {
   KintaroTitle1, KintaroTitle2, KintaroTitle3,
   KintaroTextBox1, KintaroTextBox2, KintaroTextBox3,
-  KintaroButton1, KintaroButton2, KintaroButton3,
-  KintaroButtonAccent1, KintaroButtonAccent2, KintaroButtonAccent3,
-  KintaroButtonSuccess1, KintaroButtonSuccess2, KintaroButtonSuccess3,
-  KintaroButtonError1, KintaroButtonError2, KintaroButtonError3,
+  KintaroButton1, KintaroButton2, KintaroButton3, KintaroButton4,
   KintaroButtonClose,
   KintaroDescription, KintaroModal, KintaroFooter,
   KintaroDivider1
@@ -21,7 +18,6 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 
 import './App.css'
-
 
 function App() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -43,10 +39,10 @@ function App() {
             text={"npm install git+https://github.com/xkintaro/kintaro-ui.git"}
           />
           <div className="kwherobtns">
-            <KintaroButton2 title={"Discord"}
+            <KintaroButton1 title={"Discord"}
               onClick={() => window.open("https://discord.com/invite/NSQk27Zdkv", "_blank")}
             />
-            <KintaroButtonAccent2 title={"GitHub"}
+            <KintaroButton2 title={"GitHub"} borderColor='var(--kintaro-accent-color-1)'
               onClick={() => window.open("https://github.com/xkintaro", "_blank")}
             />
           </div>
@@ -68,10 +64,10 @@ function App() {
             <div className="item-head">
               <KintaroTitle2 title={"<KintaroTextBox1 />"} />
               <div className="item-prop">
-                <KintaroButton2 title={"title"} />
-                <KintaroButton2 title={"value"} />
-                <KintaroButton2 title={"onChange"} />
-                <KintaroButton2 title={"type"} />
+                <KintaroButton3 title={"title"} />
+                <KintaroButton3 title={"value"} />
+                <KintaroButton3 title={"onChange"} />
+                <KintaroButton3 title={"type"} />
               </div>
             </div>
             <div className="item-main">
@@ -82,10 +78,10 @@ function App() {
             <div className="item-head">
               <KintaroTitle2 title={"<KintaroTextBox2 />"} />
               <div className="item-prop">
-                <KintaroButton2 title={"title"} />
-                <KintaroButton2 title={"value"} />
-                <KintaroButton2 title={"onChange"} />
-                <KintaroButton2 title={"type"} />
+                <KintaroButton3 title={"title"} />
+                <KintaroButton3 title={"value"} />
+                <KintaroButton3 title={"onChange"} />
+                <KintaroButton3 title={"type"} />
               </div>
             </div>
             <div className="item-main">
@@ -96,9 +92,9 @@ function App() {
             <div className="item-head">
               <KintaroTitle2 title={"<KintaroTextBox3 />"} />
               <div className="item-prop">
-                <KintaroButton2 title={"title"} />
-                <KintaroButton2 title={"value"} />
-                <KintaroButton2 title={"onChange"} />
+                <KintaroButton3 title={"title"} />
+                <KintaroButton3 title={"value"} />
+                <KintaroButton3 title={"onChange"} />
               </div>
             </div>
             <div className="item-main">
@@ -119,67 +115,31 @@ function App() {
         </div>
         <div className="ui-group">
           <div className="kintaro-ui-item">
-            <div className="item-head">
+            <div className="item-head" style={{ display: 'block' }}>
               <KintaroTitle2 title={"<KintaroButton1 />"} />
-              <div className="item-prop">
-                <KintaroButton2 title={"title"} />
-                <KintaroButton2 title={"onClick"} />
+              <div className="item-prop" style={{ marginTop: '1rem' }}>
+                <KintaroButton3 title={"title"} />
+                <KintaroButton3 title={"onClick"} />
+                <KintaroButton3 title={"color"} />
+                <KintaroButton3 title={"bgColor"} />
+                <KintaroButton3 title={"borderColor"} />
+                <KintaroButton3 title={"hoverColor"} />
               </div>
             </div>
             <div className="item-main">
               <KintaroButton1 title={"Kintaro Button"} />
               <KintaroButton2 title={"Kintaro Button"} />
               <KintaroButton3 title={"Kintaro Button"} />
+              <KintaroButton4 title={"Kintaro Button"} />
             </div>
           </div>
-          <div className="kintaro-ui-item">
-            <div className="item-head">
-              <KintaroTitle2 title={"<KintaroButtonAccent1 />"} color={'var( --kintaro-accent-color-1)'} />
-              <div className="item-prop">
-                <KintaroButton2 title={"title"} />
-                <KintaroButton2 title={"onClick"} />
-              </div>
-            </div>
-            <div className="item-main">
-              <KintaroButtonAccent1 title={"Kintaro Button"} />
-              <KintaroButtonAccent2 title={"Kintaro Button"} />
-              <KintaroButtonAccent3 title={"Kintaro Button"} />
-            </div>
-          </div>
-          <div className="kintaro-ui-item">
-            <div className="item-head">
-              <KintaroTitle2 title={"<KintaroButtonSuccess1 />"} color={'var( --kintaro-success-color)'} />
-              <div className="item-prop">
-                <KintaroButton2 title={"title"} />
-                <KintaroButton2 title={"onClick"} />
-              </div>
-            </div>
-            <div className="item-main">
-              <KintaroButtonSuccess1 title={"Kintaro Button"} />
-              <KintaroButtonSuccess2 title={"Kintaro Button"} />
-              <KintaroButtonSuccess3 title={"Kintaro Button"} />
-            </div>
-          </div>
-          <div className="kintaro-ui-item">
-            <div className="item-head">
-              <KintaroTitle2 title={"<KintaroButtonError1 />"} color={'var( --kintaro-error-color)'} />
-              <div className="item-prop">
-                <KintaroButton2 title={"title"} />
-                <KintaroButton2 title={"onClick"} />
-              </div>
-            </div>
-            <div className="item-main">
-              <KintaroButtonError1 title={"Kintaro Button"} />
-              <KintaroButtonError2 title={"Kintaro Button"} />
-              <KintaroButtonError3 title={"Kintaro Button"} />
-            </div>
-          </div>
+
           <div className="kintaro-ui-item">
             <div className="item-head">
               <KintaroTitle2 title={"<KintaroButtonClose />"} />
               <div className="item-prop">
-                <KintaroButton2 title={"title"} />
-                <KintaroButton2 title={"onClick"} />
+                <KintaroButton3 title={"title"} />
+                <KintaroButton3 title={"onClick"} />
               </div>
             </div>
             <div className="item-main">
@@ -203,8 +163,8 @@ function App() {
             <div className="item-head">
               <KintaroTitle2 title={"<KintaroTitle1 />"} />
               <div className="item-prop">
-                <KintaroButton2 title={"title"} />
-                <KintaroButton2 title={"color"} />
+                <KintaroButton3 title={"title"} />
+                <KintaroButton3 title={"color"} />
               </div>
             </div>
             <div className="item-main">
@@ -217,9 +177,9 @@ function App() {
             <div className="item-head">
               <KintaroTitle2 title={"<KintaroDescription />"} />
               <div className="item-prop">
-                <KintaroButton2 title={"text"} />
-                <KintaroButton2 title={"maxLength"} />
-                <KintaroButton2 title={"showToggleButton"} />
+                <KintaroButton3 title={"text"} />
+                <KintaroButton3 title={"maxLength"} />
+                <KintaroButton3 title={"showToggleButton"} />
               </div>
             </div>
             <div className="item-main">
@@ -233,10 +193,10 @@ function App() {
             <div className="item-head">
               <KintaroTitle2 title={"<KintaroModal />"} />
               <div className="item-prop">
-                <KintaroButton2 title={"children"} />
-                <KintaroButton2 title={"isOpen"} />
-                <KintaroButton2 title={"onClose"} />
-                <KintaroButton2 title={"title"} />
+                <KintaroButton3 title={"children"} />
+                <KintaroButton3 title={"isOpen"} />
+                <KintaroButton3 title={"onClose"} />
+                <KintaroButton3 title={"title"} />
               </div>
             </div>
             <div className="item-main">
