@@ -5,7 +5,7 @@ import {
   KintaroButton1, KintaroButton2, KintaroButton3, KintaroButton4,
   KintaroButtonClose,
   KintaroDescription, KintaroModal, KintaroFooter,
-  KintaroDivider1
+  KintaroDivider1, KintaroAudioPlayer
 } from 'kintaro-ui/src';
 
 import overlay from '/2.png'
@@ -23,6 +23,7 @@ function App() {
   const [modalVisible, setModalVisible] = useState(false);
 
   const [text, setText] = useState("");
+  const [textAudioPlayer, setTextAudioPlayer] = useState("");
 
   useEffect(() => {
     fetch("/kintaro-ui-preview/footer-code.txt")
@@ -30,8 +31,47 @@ function App() {
       .then((data) => setText(data));
   }, []);
 
+
+  useEffect(() => {
+    fetch("/kintaro-ui-preview/audio-player-code.txt")
+      .then((res) => res.text())
+      .then((data) => setTextAudioPlayer(data));
+  }, []);
+
+
   return (
     <div className='kintaro-ui-container'>
+
+      <KintaroAudioPlayer
+
+        playerTitle="Kintaro Player"
+        audioBasePath="kintaro-ui-preview/audio-player/audio/"
+        imageBasePath="kintaro-ui-preview/audio-player/image/"
+
+        songs={[
+          {
+            title: "Dont care",
+            file: "2.mp3",
+            image: "1.jpg",
+            artist: "Violent Vira",
+
+          }, {
+            title: "Saccharine",
+            file: "3.mp4",
+            image: "2.jpg",
+            artist: "Violent Vira",
+
+          },
+          {
+            title: "Nanatsu no taizai, ban and elaine perfect theme",
+            file: "1.mp3",
+            artist: "Unknown",
+
+          }
+        ]}
+      />
+
+
       <div className="kintaro-ui-hero">
         <div className="hero-main">
           <KintaroTitle1 title={"Kintaro UI Components"} />
@@ -282,10 +322,30 @@ function App() {
 
 
 
+
       <div className="kw-ui-footer">
 
         <div className="ui-group-head">
-          <KintaroTitle2 title={"Kintaro Footer Components"} />
+          <KintaroTitle2 title={"Kintaro Audio Player Component Code"} />
+          <KintaroDescription
+            text={"This is a collection of Kintaro UI components. You can use these components in your React applications."}
+          />
+        </div>
+
+        <div className="footer-code-kw-ui">
+          <pre>
+            <code>{textAudioPlayer}</code>
+          </pre>
+        </div>
+
+
+      </div>
+
+
+      <div className="kw-ui-footer">
+
+        <div className="ui-group-head">
+          <KintaroTitle2 title={"Kintaro Footer Component Code"} />
           <KintaroDescription
             text={"This is a collection of Kintaro UI components. You can use these components in your React applications."}
           />

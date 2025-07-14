@@ -1,4 +1,4 @@
-  <KintaroFooter
+        <KintaroFooter
           title="My Custom Footer"
           description="Explore more about our services, resources, and company."
           copyrightText="© 2025 My Company. All rights reserved."
