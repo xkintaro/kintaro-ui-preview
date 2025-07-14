@@ -45,8 +45,8 @@ function App() {
       <KintaroAudioPlayer
 
         playerTitle="Kintaro Player"
-        audioBasePath="kintaro-ui-preview/audio-player/audio/"
-        imageBasePath="kintaro-ui-preview/audio-player/image/"
+        audioBasePath="/kintaro-ui-preview/audio-player/audio/"
+        imageBasePath="/kintaro-ui-preview/audio-player/image/"
 
         songs={[
           {
