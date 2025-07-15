@@ -104,6 +104,8 @@ function App() {
             <div className="item-head">
               <KintaroTitle2 title={"<KintaroTextBox1 />"} />
               <div className="item-prop">
+                <KintaroButton3 title={"height"} />
+                <KintaroButton3 title={"width"} />
                 <KintaroButton3 title={"title"} />
                 <KintaroButton3 title={"value"} />
                 <KintaroButton3 title={"onChange"} />
@@ -118,6 +120,7 @@ function App() {
             <div className="item-head">
               <KintaroTitle2 title={"<KintaroTextBox2 />"} />
               <div className="item-prop">
+                <KintaroButton3 title={"width"} />
                 <KintaroButton3 title={"title"} />
                 <KintaroButton3 title={"value"} />
                 <KintaroButton3 title={"onChange"} />
@@ -132,6 +135,7 @@ function App() {
             <div className="item-head">
               <KintaroTitle2 title={"<KintaroTextBox3 />"} />
               <div className="item-prop">
+                <KintaroButton3 title={"width"} />
                 <KintaroButton3 title={"title"} />
                 <KintaroButton3 title={"value"} />
                 <KintaroButton3 title={"onChange"} />
@@ -158,6 +162,7 @@ function App() {
             <div className="item-head" style={{ display: 'block' }}>
               <KintaroTitle2 title={"<KintaroButton1 />"} />
               <div className="item-prop" style={{ marginTop: '1rem' }}>
+                <KintaroButton3 title={"children"} />
                 <KintaroButton3 title={"title"} />
                 <KintaroButton3 title={"onClick"} />
                 <KintaroButton3 title={"color"} />
@@ -175,6 +180,7 @@ function App() {
             <div className="item-head" style={{ display: 'block' }}>
               <KintaroTitle2 title={"<KintaroButton2 />"} />
               <div className="item-prop" style={{ marginTop: '1rem' }}>
+                <KintaroButton3 title={"children"} />
                 <KintaroButton3 title={"title"} />
                 <KintaroButton3 title={"onClick"} />
                 <KintaroButton3 title={"width"} />
@@ -191,6 +197,7 @@ function App() {
             <div className="item-head" style={{ display: 'block' }}>
               <KintaroTitle2 title={"<KintaroButton3 />"} />
               <div className="item-prop" style={{ marginTop: '1rem' }}>
+                <KintaroButton3 title={"children"} />
                 <KintaroButton3 title={"title"} />
                 <KintaroButton3 title={"onClick"} />
                 <KintaroButton3 title={"width"} />
