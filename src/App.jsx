@@ -101,9 +101,9 @@ function App() {
         </div>
         <div className="ui-group">
           <div className="kintaro-ui-item">
-            <div className="item-head">
+            <div className="item-head" style={{ display: 'block' }}>
               <KintaroTitle2 title={"<KintaroTextBox1 />"} />
-              <div className="item-prop">
+              <div className="item-prop" style={{ marginTop: '1rem' }}>
                 <KintaroButton3 title={"height"} />
                 <KintaroButton3 title={"width"} />
                 <KintaroButton3 title={"title"} />
@@ -117,9 +117,9 @@ function App() {
             </div>
           </div>
           <div className="kintaro-ui-item">
-            <div className="item-head">
+            <div className="item-head" style={{ display: 'block' }}>
               <KintaroTitle2 title={"<KintaroTextBox2 />"} />
-              <div className="item-prop">
+              <div className="item-prop" style={{ marginTop: '1rem' }}>
                 <KintaroButton3 title={"width"} />
                 <KintaroButton3 title={"title"} />
                 <KintaroButton3 title={"value"} />
@@ -132,9 +132,9 @@ function App() {
             </div>
           </div>
           <div className="kintaro-ui-item">
-            <div className="item-head">
+            <div className="item-head" style={{ display: 'block' }}>
               <KintaroTitle2 title={"<KintaroTextBox3 />"} />
-              <div className="item-prop">
+              <div className="item-prop" style={{ marginTop: '1rem' }}>
                 <KintaroButton3 title={"width"} />
                 <KintaroButton3 title={"title"} />
                 <KintaroButton3 title={"value"} />
