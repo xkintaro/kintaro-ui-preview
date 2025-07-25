@@ -3,7 +3,7 @@ import {
   KintaroTitle1, KintaroTitle2, KintaroTitle3,
   KintaroTextBox1, KintaroTextBox2, KintaroTextBox3,
   KintaroButton1, KintaroButton2, KintaroButton3, KintaroButton4,
-  KintaroButtonClose,
+  KintaroButtonClose, KintaroCheckBox,
   KintaroDescription, KintaroModal, KintaroFooter,
   KintaroDivider1, KintaroAudioPlayer
 } from 'kintaro-ui/src';
@@ -21,7 +21,7 @@ import './App.css'
 
 function App() {
   const [modalVisible, setModalVisible] = useState(false);
-
+  const [isChecked, setIsChecked] = useState(false);
   const [text, setText] = useState("");
   const [textAudioPlayer, setTextAudioPlayer] = useState("");
 
@@ -106,14 +106,14 @@ function App() {
               <div className="item-prop" style={{ marginTop: '1rem' }}>
                 <KintaroButton3 title={"height"} />
                 <KintaroButton3 title={"width"} />
-                <KintaroButton3 title={"title"} />
+                <KintaroButton3 title={"placeholder"} />
                 <KintaroButton3 title={"value"} />
                 <KintaroButton3 title={"onChange"} />
                 <KintaroButton3 title={"type"} />
               </div>
             </div>
             <div className="item-main">
-              <KintaroTextBox1 title={"Text Here"} />
+              <KintaroTextBox1 placeholder={"Text Here"} />
             </div>
           </div>
           <div className="kintaro-ui-item">
@@ -236,6 +236,37 @@ function App() {
             </div>
             <div className="item-main">
               <KintaroButtonClose title={"Kapat"} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <KintaroDivider1 />
+
+      <div className="kw-ui">
+        <div className="ui-group-head">
+          <KintaroTitle2 title={"Kintaro CheckBox Components"} />
+          <KintaroDescription
+            text={"This is a collection of Kintaro UI components. You can use these components in your React applications."}
+          />
+        </div>
+        <div className="ui-group">
+          <div className="kintaro-ui-item">
+            <div className="item-head" style={{ display: 'block' }}>
+              <KintaroTitle2 title={"<KintaroCheckBox />"} />
+              <div className="item-prop" style={{ marginTop: '1rem' }}>
+                <KintaroButton3 title={"checked"} />
+                <KintaroButton3 title={"onChange"} />
+                <KintaroButton3 title={"title"} />
+                <KintaroButton3 title={"disabled"} />
+              </div>
+            </div>
+            <div className="item-main">
+              <KintaroCheckBox
+                title={"Text Here"}
+                checked={isChecked}
+                onChange={(e) => setIsChecked(e.target.checked)}
+              />
             </div>
           </div>
         </div>
