@@ -1,0 +1,37 @@
+import { KintaroAudioPlayer } from 'kintaro-ui/src';
+
+function AudioPlayer1() {
+
+    return (
+        <KintaroAudioPlayer
+
+            playerTitle="Kintaro Player"
+            audioBasePath="/kintaro-ui-preview/audio-player/audio/"
+            imageBasePath="/kintaro-ui-preview/audio-player/image/"
+
+            songs={[
+                {
+                    title: "Dont care",
+                    file: "2.mp3",
+                    image: "1.jpg",
+                    artist: "Violent Vira",
+
+                }, {
+                    title: "Saccharine",
+                    file: "3.mp4",
+                    image: "2.jpg",
+                    artist: "Violent Vira",
+
+                },
+                {
+                    title: "Nanatsu no taizai, ban and elaine perfect theme",
+                    file: "1.mp3",
+                    image: "3.jpg",
+                    artist: "Unknown",
+                }
+            ]}
+        />
+    )
+}
+
+export default AudioPlayer1

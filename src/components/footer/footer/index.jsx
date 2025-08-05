@@ -1,0 +1,63 @@
+import { KintaroFooter } from 'kintaro-ui/src';
+
+import { IoIosMail } from "react-icons/io";
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+
+function Footer1() {
+
+    return (
+        <KintaroFooter
+            title="My Custom Footer"
+            description="Explore more about our services, resources, and company."
+            copyrightText="© 2025 My Company. All rights reserved."
+            sections={[
+                {
+                    title: "Services",
+                    links: [
+                        { text: "Web Development", url: "" },
+                        { text: "Mobile Applications", url: "" },
+                        { text: "UI/UX Design", url: "" },
+                        { text: "Cloud Hosting", url: "" }
+                    ]
+                },
+                {
+                    title: "Resources",
+                    links: [
+                        { text: "Documentation", url: "" },
+                        { text: "API Reference", url: "" },
+                        { text: "Developer Tools", url: "" },
+                        { text: "Code Samples", url: "" }
+                    ]
+                },
+                {
+                    title: "Company",
+                    links: [
+                        { text: "About Us", url: "" },
+                        { text: "Careers", url: "" },
+                        { text: "Press & Media", url: "" },
+                        { text: "Partners", url: "" }
+                    ]
+                },
+                {
+                    title: "Support",
+                    links: [
+                        { text: "Help Center", url: "" },
+                        { text: "Community Forum", url: "" },
+                        { text: "Status Page", url: "" },
+                        { text: "Contact Support", url: "" }
+                    ]
+                }
+            ]}
+            socialIcons={[
+                { icon: <FaGithub />, url: "https://github.com" },
+                { icon: <FaTwitter />, url: "https://twitter.com" },
+                { icon: <FaInstagram />, url: "https://instagram.com" },
+                { icon: <IoIosMail />, url: "mailto:contact@example.com" }
+            ]}
+        />
+    )
+}
+
+export default Footer1
