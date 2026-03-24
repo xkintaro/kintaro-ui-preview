@@ -4,7 +4,7 @@ function TextBox3() {
     return (
         <div className="kintaro-ui-item">
             <div className="item-head" style={{ display: 'block' }}>
-                <KintaroTitle2 title={"<KintaroTextBox3 />"} />
+                <KintaroTitle2>{"<KintaroTextBox3 />"}</KintaroTitle2>
                 <div className="item-prop" style={{ marginTop: '1rem' }}>
                     <KintaroButton3 title={"width"}>width</KintaroButton3>
                     <KintaroButton3 title={"title"}>title</KintaroButton3>

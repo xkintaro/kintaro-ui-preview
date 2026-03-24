@@ -1,6 +1,6 @@
 {
   "homepage": "https://xkintaro.github.io/kintaro-ui-preview/",
-  "name": "frontend",
+  "name": "kintaro-ui-preview",
   "private": true,
   "version": "0.0.0",
   "type": "module",

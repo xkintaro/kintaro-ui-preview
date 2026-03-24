@@ -129,7 +129,7 @@ body {
 }
 
 .footer-code-kw-ui {
-  max-height: 300px;
+  max-height: 400px;
   background-image: url(/2.png);
   overflow-y: auto;
   background-color: var(--kintaro-color-3);
