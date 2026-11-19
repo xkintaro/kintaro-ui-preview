@@ -4,7 +4,7 @@
 
 ## 🔗 Main Repository
 
-[https://github.com/xkintaro/kintaro-ui/](https://github.com/xkintaro/kintaro-ui/)
+- [https://github.com/xkintaro/kintaro-ui/](https://github.com/xkintaro/kintaro-ui/)
 
 ## 📋 About
 
