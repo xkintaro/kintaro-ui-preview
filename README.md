@@ -1,6 +1,6 @@
 ## 📷 Demo
 
-[https://xkintaro.github.io/kintaro-ui-preview/](https://xkintaro.github.io/kintaro-ui-preview/)
+- [https://xkintaro.github.io/kintaro-ui-preview/](https://xkintaro.github.io/kintaro-ui-preview/)
 
 ## 🔗 Main Repository
 
